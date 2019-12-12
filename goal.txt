@@ -1,0 +1,73 @@
+create a login system
+##########################
+web version (using flask or django)
+GUI version (using tkinter)
+Command Line Version
+##########################
+credentials stored in sql server
+
+username
+password
+
+pw requirements: one capital, one number, one symbol, more than 5 characters
+#########################
+create account function
+
+#######################
+architecture
+
+front end
+client with login
+
+backend
+sql database
+python script to retrieve credentials and check with database, then send back a message
+
+
+
+########################
+date log
+
+8/2 working on encryppting the password. next will work on setting up the sql server with user table.
+8/5 sql db is created. used postgresql as it was easier. figured out sockets and sending data through them. now working on storing and checking that data into the database
+########################
+Packages
+
+Python3.7
+cryptography
+psycopg2
+
+########################
+ssh connections
+cd c:/projects/login/
+ssh -i -vvv "LoginService.pem" ec2-user@ec2-18-191-117-109.us-east-2.compute.amazonaws.com
+
+terminal to connect to db
+sudo -i -u postgres
+psql -U postgres
+SELECT * FROM users
+\dt (show all tables)
+
+##########################
+
+LINKS:
+
+how to encrypt string
+https://stackoverflow.com/questions/53955707/how-do-i-encrypt-a-string-variable-using-fernet-encryption
+https://nitratine.net/blog/post/encryption-and-decryption-in-python/
+https://docs.python-guide.org/scenarios/crypto/
+how to connect python to sql
+https://datatofish.com/how-to-connect-python-to-sql-server-using-pyodbc/
+https://www.datacamp.com/community/tutorials/tutorial-postgresql-python
+
+CHAT SERVER SOCKET METHODS
+https://www.youtube.com/watch?v=D0SLpD7JvZI
+
+
+
+  177 | tsewell4w             | ED5hLjvXB3E
+  178 | vcracknell4x          | fFAjJLDGEV
+  179 | kshakeshaft4y         | gBYlJGyXGV
+  180 | gvowdon4z             | gjvFcV3Ja8H
+  181 | ccoulson50            | Ae1MRN
+  182 | cnekrews51            | t4vLEQvSc
